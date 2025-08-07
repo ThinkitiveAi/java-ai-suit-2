@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import "./App.css";
 import RoleSelection from "./components/RoleSelection";
 import ProviderLogin from "./components/ProviderLogin";
@@ -15,11 +16,36 @@ import PatientLogin from "./components/PatientLogin";
 import PatientRegistration from "./components/PatientRegistration";
 import PatientDashboard from "./components/PatientDashboard";
 import PatientForgotPassword from "./components/PatientForgotPassword";
+import ProviderAvailability from "./components/ProviderAvailability";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: "#363636",
+              color: "#fff",
+            },
+            success: {
+              duration: 3000,
+              iconTheme: {
+                primary: "#4caf50",
+                secondary: "#fff",
+              },
+            },
+            error: {
+              duration: 4000,
+              iconTheme: {
+                primary: "#f44336",
+                secondary: "#fff",
+              },
+            },
+          }}
+        />
         <Routes>
           <Route path="/" element={<RoleSelection />} />
 
@@ -31,6 +57,10 @@ function App() {
             element={<ForgotPassword />}
           />
           <Route path="/provider/dashboard" element={<Dashboard />} />
+          <Route
+            path="/provider/availability"
+            element={<ProviderAvailability />}
+          />
 
           {/* Patient Routes */}
           <Route path="/patient/login" element={<PatientLogin />} />
