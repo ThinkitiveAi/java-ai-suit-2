@@ -1,0 +1,16 @@
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/controller/PatientController.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/dto/PatientRegistrationRequest.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/service/ProviderService.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/entity/AppointmentSlot.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/repository/PatientRepository.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/service/PatientService.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/repository/ProviderRepository.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/controller/ProviderController.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/repository/AppointmentSlotRepository.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/HealthApplication.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/entity/Provider.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/entity/ProviderAvailability.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/dto/ProviderRegistrationRequest.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/entity/Patient.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/repository/ProviderAvailabilityRepository.java
+/home/ttpl-lnv14-053/Documents/Session/Health/java-ai-suit-2/src/main/java/com/example/health/config/SecurityConfig.java
