@@ -15,7 +15,7 @@ const Dashboard = () => {
     navigate("/");
   };
 
-  const handleScheduleAppointment = () => {
+  const handleManageAppointments = () => {
     navigate("/provider/availability");
   };
 
@@ -78,7 +78,11 @@ const Dashboard = () => {
               </p>
             </div>
 
-            <div className="dashboard-card">
+            <div
+              className="dashboard-card"
+              onClick={handleManageAppointments}
+              style={{ cursor: "pointer" }}
+            >
               <div className="card-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
@@ -116,6 +120,17 @@ const Dashboard = () => {
                 performance.
               </p>
             </div>
+            <div className="dashboard-card">
+              <div className="card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+                </svg>
+              </div>
+              <h3 className="card-title">Schedule Appointment</h3>
+              <p className="card-description">
+                Schedule an appointment with a provider.
+              </p>
+            </div>
           </div>
 
           <div className="quick-actions">
@@ -126,15 +141,6 @@ const Dashboard = () => {
                   <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
                 </svg>
                 Add New Patient
-              </button>
-              <button
-                className="action-button secondary"
-                onClick={handleScheduleAppointment}
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
-                </svg>
-                Schedule Appointment
               </button>
               <button className="action-button secondary">
                 <svg viewBox="0 0 24 24" fill="currentColor">

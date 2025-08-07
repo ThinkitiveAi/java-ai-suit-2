@@ -332,7 +332,7 @@ const ProviderAvailability = () => {
           <Grid container spacing={3} alignItems="center">
             <Grid item xs={12} md={6}>
               <Typography variant="h6" gutterBottom>
-                Provider: Dr. John Doe
+                Provider: Dr. Sanskruti Kunjir
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 Manage your availability and appointment slots
