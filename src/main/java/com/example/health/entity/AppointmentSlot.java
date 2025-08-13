@@ -1,5 +1,9 @@
 package com.example.health.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.time.Instant;
@@ -8,6 +12,9 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "appointment_slot")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AppointmentSlot {
     @Id
     @GeneratedValue

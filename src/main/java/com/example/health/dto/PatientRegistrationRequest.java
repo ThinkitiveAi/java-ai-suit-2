@@ -1,9 +1,16 @@
 package com.example.health.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class PatientRegistrationRequest {
     @NotBlank
     @Size(min = 2, max = 50)

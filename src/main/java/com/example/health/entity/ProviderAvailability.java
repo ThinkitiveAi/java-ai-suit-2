@@ -1,5 +1,9 @@
 package com.example.health.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
@@ -8,6 +12,9 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "provider_availability")
 public class ProviderAvailability {
@@ -107,6 +114,9 @@ public class ProviderAvailability {
         CONSULTATION, FOLLOW_UP, EMERGENCY, TELEMEDICINE
     }
 
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     @Embeddable
     public static class Location {
         @Enumerated(EnumType.STRING)
@@ -119,6 +129,9 @@ public class ProviderAvailability {
         // Getters and setters omitted for brevity
     }
 
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     @Embeddable
     public static class Pricing {
         private BigDecimal baseFee;

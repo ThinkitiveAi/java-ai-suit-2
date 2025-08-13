@@ -1,10 +1,17 @@
 package com.example.health.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.time.Instant;
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "providers", uniqueConstraints = {
     @UniqueConstraint(columnNames = {"email"}),
@@ -82,6 +89,9 @@ public class Provider {
         PENDING, VERIFIED, REJECTED
     }
 
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     @Embeddable
     public static class ClinicAddress {
         @NotBlank
